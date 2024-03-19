@@ -2,13 +2,13 @@ const mostrarSenha = () =>
 {
     var inSenha = document.querySelector("#senha");
 
-    if(inSenha.getAttribute("type") === "password")
+    if(inSenha.getAttribute('type') === 'password')
     {
-        inSenha.setAttribute("type", "text");
+        inSenha.setAttribute('type', 'text');
     }
     else
     {
-        inSenha.setAttribute("type", "password");
+        inSenha.setAttribute('type', 'password');
     }
 }
 
