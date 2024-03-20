@@ -1,6 +1,6 @@
-const mostrarSenha = () => 
+function mostrarSenha()
 {
-    var inSenha = document.querySelector("#senha");
+    var inSenha = document.querySelector('#senha');
 
     if(inSenha.getAttribute('type') === 'password')
     {
@@ -31,4 +31,20 @@ function login()
     {
         document.getElementById('error-modal').style.display = "flex";
     }
+}
+
+const fecharErro = () => document.getElementById('error-modal').style.display = "none";
+
+function formatarDara(item)
+{
+    var options = {
+        month : 'numeric',
+        day : 'numeric',
+        hour : 'numeric',
+        minute : 'numeric',
+        second : 'numeric'
+    }
+
+    return item.toLocaleString("pt-BR", options)
+    
 }

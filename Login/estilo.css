@@ -41,6 +41,11 @@ body
     position: absolute;
 }
 
+.key:hover
+{
+    cursor: pointer;
+}
+
 input
 {
     border-radius: 20px;
