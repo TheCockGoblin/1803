@@ -4,9 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mammoth/1.0.1/mammoth.browser.min.js"></script>
 </head>
 <body>
-    <a href="../Carrinho/carrinho.html">🛒</a>
+    <a href="../Loja/loja.html">😘</a>
     <h1>Carrinho</h1>
+
+    <div id="lista"></div>
+
+    <h3 id="total"></h3>
+    <button onclick="gerarDocumentoWord()">Gerar Documento</button>
+
+    <p id="pedido">
+        Pedido gerado 
+        <button id="sc" onclick="successClose()">❌</button>
+    </p>
 </body>
+<script src="car.js"></script>
 </html>
